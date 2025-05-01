@@ -1,0 +1,588 @@
+#Banner {
+    display: flex;
+    justify-content: center;
+    height: 940px;
+    background-color: #101010;
+}
+.imgBanner {
+    transition: 1s all;
+}
+.imgBanner:hover{
+    transform: scaleX(-1) !important
+}
+#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px 100px 0px;
+}
+
+.containerBanner,
+.superior-Sobremi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.containerText {
+    width: 60%;
+}
+
+.containerText h2,
+.containerText h1,
+.containerText p {
+    font-family: "Oswald", sans-serif;
+}
+
+.containerText p {
+    font-weight: 350;
+    font-size: 19px;
+}
+
+.containerText h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.containerText h2 span {
+    color: #008259;
+}
+
+.containerText h1 {
+    margin-top: 0px;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #57BD9E;
+}
+
+.containerText h1 span {
+    color: white;
+}
+
+.containerText p {
+    color: white;
+}
+
+.containerButtons {
+    display: flex;
+}
+
+.btnSeparador {
+    margin: 10px;
+}
+
+.btnContactarBanner {
+    margin-top: 10px;
+    border-radius: 100px;
+    background-color: #008259;
+    border: none;
+    color: white;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btnContactarBanner:hover {
+    background-color: white;
+    color: #008259;
+}
+
+.btnCV {
+    margin-top: 10px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid #008259;
+    color: #008259;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #008259;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.iconRed {
+    background-color: #008259;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 100px;
+}
+
+.iconRed:hover {
+    width: 48px;
+    height: 48px;
+    box-shadow: inset white;
+
+
+}
+
+.btnCV:hover {
+    color: white;
+    box-shadow: inset 400px 0 0 0 #008259;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a,
+.btn-1 a {
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 122px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    position: relative;
+    z-index: 3;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.btn-1 a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    color: white !important;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - 10px);
+    background-color: #008259;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.limitarMenorWidth {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.limitarMenorWidth::-webkit-scrollbar {
+    width: 0;
+    touch-action: pan-x;
+}
+
+.limitarMenorWidth .background-CardEstudio{
+    width: 530px !important;
+    flex: 0 0 auto;
+    cursor: grab;
+    user-select: none;
+}
+
+.limitarMenorWidth .btnCer_Est{
+    margin-top: 20px;
+}
+
+.limitarMenorWidth .background-CardEstudio.active {
+    cursor: grabbing;
+}
+
+.btn-1 a:hover::before {
+    transform: scaleY(0);
+
+}
+.menu{
+    transition: 1s all;
+}
+#contTit {
+    color: white !important;
+}
+
+.btn-1 a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+    background-color: #008259;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+
+.btn-1 a:hover::after {
+    transform: scaleX(0);
+}
+
+.textoSobreMi {
+    width: 49%;
+}
+
+.textoSobreMi .titleVerde {
+    margin-bottom: 40px;
+    width: 25vh;
+}
+
+.textoSobreMi p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 25px 0px 25px 0px;
+}
+
+.imgSobremi {
+    width: 500px;
+    height: 420px;
+    background-color: #57BD9E;
+}
+
+.imgSobremi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.containerButtons a, .containerButtons button{
+    font-family: 'Oswald';
+    font-size: 16px;
+    text-decoration: none;
+}
+#Tecnologias {
+    width: 85%;
+
+}
+
+#Tecnologias .titleVerde {
+    margin-bottom: 40px;
+    width: 350px;
+}
+
+.superior-Sobremi {
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.containerTecnologias {
+    display: grid;
+    padding: 30px 50px;
+    margin-top: 20px;
+    background-color: #008259;
+    grid-template-columns: repeat(auto-fit,
+            minmax(280px, 1fr));
+    gap: 20px 50px;
+}
+
+.tituloEstudios {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+}
+
+#Estudios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0px;
+    flex-direction: column;
+    background-color: #008259;
+}
+
+.ContainerEstudio {
+    width: 85%;
+}
+
+.contenedorBotones {
+    display: flex;
+    align-items: center;
+}
+
+#experienciaLaboral {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.centrarExpLaboral {
+    width: 85%;
+    padding: 50px 0px 50px 0px;
+}
+.lineaExp{
+    width: 5px;
+    background-color: #008259;
+}
+.cartExp .background-CardEstudio {
+    width: 600px !important;
+    background-color: #008259 !important;
+    transition: all 0.5s;
+}
+
+.cartExp .titleVerde-CardEstudio , .cartExp .titleVerde-CardEstudio p{
+    background-color: #181818 !important;
+    color: white !important;
+}
+.cartExp{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Circulo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+
+.experienciasCartas{
+    position: relative;
+    right: 27px;
+}
+
+.experiencias{
+    display: flex;
+}
+.containerExp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.limitarMenorWidth .Tecnologias-Estudio , .experienciasCartas .Tecnologias-Estudio{
+    width: 100% !important;
+}
+.centrarExpLaboral h2{
+    text-align: center;
+    font-family: "Oswald";
+    color: white;
+    margin-bottom: 30px;
+}
+.cartExp .background-CardEstudio:hover{
+    background-color: #181818 !important;
+}
+.cartExp .background-CardEstudio:hover .titleVerde-CardEstudio , .cartExp .background-CardEstudio:hover .titleVerde-CardEstudio p{
+    background-color: #008259 !important;
+}
+#proyectos{
+    background-color: #008259;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+}
+#proyectos h2{
+    margin-top: 0px;
+}
+.CentrarProyectos{
+    width: 85%;
+    padding: 20px 0px;
+}
+.CentrarProyectos h2{
+    text-align: center;
+    font-family: "Oswald";
+    color: white;
+    margin-bottom: 30px;
+}
+
+.background-CardProyecto{
+    position: relative;
+    height: 250px;
+}
+#contactar{
+    display: flex;
+    justify-content: center;
+}
+.centrarContactar{
+    width: 85%;
+    margin: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.formulario{
+    width: 50%;
+    font-family: "Oswald";
+    color: white;
+    margin-bottom: 30px;
+}
+.formulario input{
+    width: 99%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid #008259;
+    color: white;
+}
+
+.formulario input::placeholder{
+    font-family: "oswald";
+    font-size: 16px;
+}
+
+.formulario input[type="submit"]{
+    background-color: #008259;
+    color: white;
+    width: 160px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.formulario input[type="submit"]:hover{
+    background-color: white;
+    color: #008259;
+}
+.descripcion-input{
+    height: 200px !important;
+}
+footer{
+    background-color: #008259;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorMenuScroll{
+    background-color: #004932 !important;
+}
+.colorMenuScroll .btn-1 a::before, .colorMenuScroll .btn-1 a::after{
+    background-color: #004932 !important;
+}
+.CentrarFooter p{
+    text-align: end;
+    font-size: 18px;
+    font-family: "Oswald";
+    color: white;
+    margin: 0;
+}
+.CentrarFooter{
+    width: 85%;
+}
+
+@media(max-width: 1381px){
+    .iconosExp{
+        display: none;
+    }
+}
+@media(max-width: 1210px) {
+    .imgBanner {
+        display: none;
+    }
+}
+
+@media(max-width: 1024px) {
+    .limitarMenorWidth {
+        overflow-x: scroll;
+    }
+    .centrarContactar img{
+        display: none;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .containerText {
+        width: 100%;
+    }
+
+    .superior-Sobremi {
+        flex-direction: column-reverse;
+    }
+
+    .imgSobremi {
+        width: 100%;
+    }
+
+    .textoSobreMi {
+        width: 100%;
+    }
+
+}
+@media(max-width: 829px){
+    .cartExp .background-CardEstudio {
+        width: 85% !important;
+    }
+}
+@media(max-width: 629px) {
+    .containerButtons {
+        flex-direction: column;
+    }
+
+    .btnContactarBanner {
+        padding: 15px 30px;
+    }
+
+    .btnCV {
+        margin: 10px 0px 20px 0px;
+    }
+
+    .iconRed {
+        margin: 0px 15px 0px 0px;
+    }
+
+    .containerText h1 {
+        font-size: 55px;
+    }
+
+    .limitarMenorWidth .background-CardEstudio {
+        width: 280px !important;
+    }
+    .Circulo, .flechaCartaExp, .lineaExp{
+        display: none;
+    }
+    .cartExp .background-CardEstudio {
+        width: 100% !important;
+    }
+    .experienciasCartas{
+        right: 0;
+    }
+}
+
+@media(max-width: 455px) {
+    .titleVerde {
+        width: 100% !important;
+    }
+
+    .containerBanner,
+    .superior-Sobremi,
+    #Tecnologias,
+    .ContainerEstudio,
+    .CentrarProyectos {
+        width: 90% !important;
+    }
+
+    .containerTecnologias {
+        padding: 5px 5px;
+    }
+}
+.containerText{
+    display: table;
+}
+.containerText h1{
+    position: relative; 
+	background: #101010;
+}
+.containerText .escribir{
+    position:absolute;
+    right:0;
+    width:0;
+    background: #101010;
+    border-left: 1px solid #008259;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+@keyframes escribir {
+    from { width: 100% }
+    to { width:32% }
+}

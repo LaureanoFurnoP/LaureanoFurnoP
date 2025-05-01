@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.background-CardProyecto {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.background-CardProyecto:hover {
+  background-color: #022417;
+  border: 1px solid white;
+}
+.Tecnologias-Estudio {
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px 12px;
+}
+
+.background-CardProyecto p {
+  color: #ffffff;
+  font-weight: 300;
+}
+.fechaInicio-terminado {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 35px;
+  font-size: 17px;
+  margin-bottom: 0 !important;
+}
+.descripcion {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif !important;
+}
+.nameTitulo {
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+.btnPag_Est {
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 100px;
+  background-color: #008259;
+  color: white;
+  border: none;
+  width: 215px;
+  font-family: oswald;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.btnPag_Est:hover {
+  background-color: white;
+  color: #008259;
+  border: 1px solid black;
+}
+
+.btnCer_Est {
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid #008259;
+  color: #008259;
+  padding: 0px 30px 0px 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 215px;
+  font-family: oswald;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 30px;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #008259;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.tituloH2 {
+  font-family: "oswald";
+  font-size: 23px;
+  margin: 0px !important;
+  color: white;
+  margin-bottom: 10px !important;
+}
+
+.btnCer_Est:hover {
+  color: white;
+  box-shadow: inset 400px 0 0 0 #008259;
+}
+
+.imgProyectoContainer {
+  width: 100%;
+  height: 350px;
+}
+
+.imgContainerDerecha{
+  display: flex;
+  justify-content: end;
+}
+.containerC-Derecha{
+  width: 70%;
+  position: relative;
+  bottom: 350px;
+  left: 0% !important;
+}
+.containerC{
+  width: 70%;
+  position: relative;
+  bottom: 350px;
+  left: 30%;
+}
+.imgProyectoContainer img {
+  width: 650px;
+  height: 100%;
+}
+
+.imgProyectoContainer img {
+  filter: brightness(20%);
+  transition: all 1s;
+}
+
+.imgProyectoContainer img:hover {
+  position: relative;
+  z-index: 999;
+  filter: brightness(100%) !important;
+}
+.containerProyectos {
+  height: 450px;
+}
+@media(max-width: 954px){
+  .containerProyecto{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .imgContainerDerecha{
+    display: block;
+  }
+  .imgProyectoContainer img{
+    width: 100%;
+  }
+  .containerC{
+    width: 100%;
+    bottom: 44px;
+    left: 0%;
+  }
+  .containerC h3{
+    margin-left: 15px !important;
+  }
+  .background-CardProyecto{
+    height: auto !important;
+  }
+  .containerC .background-CardProyecto{
+    border-radius: 0px 0px 10px 10px !important;
+  }
+  .containerProyectos{
+    height: auto;
+    flex: 0 0 auto;
+
+    width: 360px !important;
+  }
+}
+@media(max-width:572px){
+  .btns-Proyecto button{
+    margin-bottom: 10px;
+  }
+}

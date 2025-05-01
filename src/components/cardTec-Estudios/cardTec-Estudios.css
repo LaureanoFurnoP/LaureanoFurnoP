@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+.titleVerde-CardEstudio {
+  background-color: #008259;
+  display: flex;
+  align-items: center;
+  width: 108px;
+  margin-right: 15px;
+  justify-content: space-around;
+  border-radius: 100px;
+}
+
+.circle-cardEstTec {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 100px;
+}
+.circle-cardEstTec img {
+  width: 100%;
+  height: 100%;
+}
+.titleVerde-CardEstudio p {
+  margin: 0px;
+  font-family: oswald;
+  font-weight: 800;
+  margin-left: 10px;
+  color: white;
+}
