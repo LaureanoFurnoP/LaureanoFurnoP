@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  margin: 0;
+  background-color: #191919;
+}
+
+.linksHeader {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: 0px;
+}
+
+.linksHeader a {
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.linksHeader a:hover {
+  color: #101010;
+}
+
+.menuContainer {
+  display: flex;
+  width: 100%;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.iconLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0em 0em 1em rgba(255, 255, 255);
+
+  width: 100%;
+  background-color: #008259;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.contactarMenu {
+  border: 1px solid white;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contactarMenu:hover,
+.contactarMenu:hover a {
+  background-color: white;
+  color: #008259;
+}
+.linksHeader-Responsive {
+  display: none;
+}
+#menuBar {
+  display: none;
+}
+@media (max-width: 893px) {
+  .linksHeader {
+    display: none;
+  }
+
+  .menu-Responsive {
+    left: 100%;
+    transition: all 1.2s;
+    position: absolute;
+    width: 100%;
+    z-index: 700;
+  }
+
+  .activeMenu {
+    left: 0;
+  }
+  #menuBar {
+    display: block;
+  }
+  .linksHeader-Responsive {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 100% !important;
+    justify-content: center;
+    gap: 20px;
+    background-color: #008259cb;
+    padding: 0;
+    margin-top: 31px;
+  }
+
+  .linksHeader-Responsive a {
+    font-family: "Oswald";
+    text-decoration: none;
+    color: white;
+  }
+}
