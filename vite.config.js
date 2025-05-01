@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.docx'],
-  base:'https://LaureanoFurnoP.github.io/vite-deploy/'
+  base:'https://LaureanoFurnoP.github.io/LaureanoFurnoP/'
 })
