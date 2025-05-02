@@ -115,7 +115,7 @@ function App() {
           <div className='imgSobremi'>
             <img src={yoimagen} alt="imagenAboutMe" />
           </div>
-          <div data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" className='textoSobreMi'>
+          <div className='textoSobreMi'>
             <Titles title={"SOBRE MI"} />
             <p>
               Soy Laureano Furno, desarrollador full-stack. Recién me gradué de una escuela técnica en computación, donde aprendí sobre desarrollo web, Java, Python, bases de datos como MySQL, metodologías ágiles y cómo documentar y diagramar proyectos.
@@ -150,7 +150,7 @@ function App() {
       </section>
 
       <section id='Estudios'>
-        <div className='ContainerEstudio'>
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='ContainerEstudio'>
           <h2 className='tituloEstudios'>ESTUDIOS</h2>
           <Card  nameTitulo={"TECNICO EN COMPUTACION"} fecha={"2019-2024"} desc={"Asistí a un secundario técnico, donde en cuarto año comencé la orientación en computación. Allí pasé por temas como Arduino con C++, Python, Java, diagramaciones, APIs REST con Node.js, HTML, CSS, PHP, MySQL, JavaScript, y fue una experiencia espectacular. Me enamoré del hecho de programar y de resolver problemas. En sexto año, comenzamos materias como Desarrollo de Sistemas, donde desarrollamos una app web para gestionar torneos de eSports, y también en Prácticas Profesionalizantes, donde creamos una visual novel, entre otros proyectos que requerían documentar endpoints, realizar diagramas entidad-relación, diagramas de flujo, aplicar metodologías como Scrum, entre otros conocimientos que considero muy valiosos, sobre todo por haber tenido docentes realmente comprometidos."} tecnologias={["HTML", "CSS", "FIGMA", "JavaScript", "Node", "Express", "MySQL", "Bootstrap"]} />
         </div>
