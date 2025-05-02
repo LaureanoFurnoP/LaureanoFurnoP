@@ -28,7 +28,7 @@ import doc from './assets/CV-Laureano-Furno.docx'
 import experienicaLaboralIcono from './assets/images/experienicaLaboralIcono.svg'
 
 import './App.css'
-import ImagenBanner from './assets/images/banner.png'
+import ImagenBanner from './assets/images/banner.webp'
 
 import instagram from './assets/images/instagram.svg'
 import linkedin from './assets/images/linkedin.svg'

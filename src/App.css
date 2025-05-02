@@ -94,8 +94,8 @@
     margin-top: 10px;
     border-radius: 100px;
     background-color: transparent;
-    border: 1px solid #008259;
-    color: #008259;
+    border: 1px solid rgb(0, 184, 125) !important;
+    color: rgb(0, 184, 125) !important;
     padding: 0px 30px 0px 30px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -133,7 +133,7 @@
 
 .btnCV:hover {
     color: white;
-    box-shadow: inset 400px 0 0 0 #008259;
+    box-shadow: inset 400px 0 0 0 rgb(0, 130, 89);
 }
 
 .btn-1 {
@@ -554,7 +554,9 @@ footer{
     .titleVerde {
         width: 100% !important;
     }
-
+    .containerText p {
+        font-size: 16px;
+    }
     .containerBanner,
     .superior-Sobremi,
     #Tecnologias,
