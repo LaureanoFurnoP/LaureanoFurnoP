@@ -44,8 +44,8 @@
 .btnCer_Est {
   border-radius: 100px;
   background-color: transparent;
-  border: 1px solid #008259;
-  color: #008259;
+  border: 1px solid rgb(0,184,125);
+  color: rgb(0,184,125);
   padding: 0px 30px 0px 30px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -57,13 +57,13 @@
   display: inline-block;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #008259;
+  box-shadow: inset 0 0 0 0 rgb(0,184,125);
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
 .btnCer_Est:hover {
-  color: white;
+  color: white !important;
   box-shadow: inset 400px 0 0 0 #008259;
 }
