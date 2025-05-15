@@ -6,6 +6,7 @@ import TecCard from './components/tecnologias-cartas/TecCard.jsx'
 import Card from './components/Card/Card.jsx'
 import CardProyectos from './components/Card-Proyecto/CardProyecto.jsx'
 import imgHSE from './assets/images/diseño-web/serium.webp'
+import imgVoxaive from './assets/images/diseño-web/voxaive.webp'
 
 import imagenReact from './assets/images/reactIcon.svg'
 import contactarIMG from './assets/images/contactarIMG.svg'
@@ -22,7 +23,7 @@ import imagenFigma from './assets/images/figma_logo.svg'
 import imagenHTML from './assets/images/HTML5_logo_and_wordmark.svg'
 import imagenPostgreSQL from './assets/images/Postgresql_elephant.svg'
 import imagenCSS from './assets/images/CSS.svg'
-import yoimagen from './assets/images/yoimagen.svg'
+import yoimagen from './assets/images/yoimagen.webp'
 import doc from './assets/CV-Laureano-Furno.docx'
 
 import experienicaLaboralIcono from './assets/images/experienicaLaboralIcono.svg'
@@ -78,6 +79,14 @@ function App() {
   function contactarIr(){
     location.href = '#contactar'
   }
+  function despliguecont(){
+    let confirmarActivo = document.querySelector(".active")
+    if(confirmarActivo){
+      document.querySelector('.botonesContacto').classList.remove('active')
+    }else{
+      document.querySelector('.botonesContacto').classList.add('active')
+    }
+  }
   useEffect(() => {
     AOS.init();
   }, []);
@@ -109,7 +118,6 @@ function App() {
           <img className='imgBanner' data-aos="fade-up" data-aos-anchor-placement="center-bottom"  src={ImagenBanner} alt="imagenBanner" />
         </div>
       </section>
-    
       <section id='about'>
         <div className='superior-Sobremi'>
           <div className='imgSobremi'>
@@ -144,11 +152,25 @@ function App() {
             <TecCard nameTecs={"React"} img={imagenReact} />
             <TecCard nameTecs={"PostgreSQL"} img={imagenPostgreSQL} />
             <TecCard nameTecs={"CSS"} img={imagenCSS} />
-
           </div>
         </div>
       </section>
-
+      <div className='botonesContacto'>
+        <div className='contButtonsFixed'>
+          <div className='iconContact2 btnSeparador'>
+            <img onClick={() => location.href = "https://www.instagram.com/laureano20fg/"}  src={instagram} alt="imagenInstagram" />
+          </div>
+          <div className='iconContact2 btnSeparador'>
+            <img onClick={() => location.href = "https://www.linkedin.com/in/laureano-furno-47b76730a/"} src={linkedin} alt="imagenLinkedinl" />
+          </div>
+          <div className='iconContact2 btnSeparador'>
+            <img onClick={() => location.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBXlHJzcZvGQgrZwvrJrdktHsCbnTMLSMMQLZprrtvRPGbrbnBFvMkZmlrCJQnRzTtXB"}  src={gmail} alt="imagenGmail" />
+          </div>
+        </div>
+        <div className='clickDespliegue' onClick={() => despliguecont()}>
+          <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#cfcfcf"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>
+        </div>
+      </div>
       <section id='Estudios'>
         <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className='ContainerEstudio'>
           <h2 className='tituloEstudios'>ESTUDIOS</h2>
@@ -196,8 +218,8 @@ function App() {
         <div className='CentrarProyectos'>
           <h2>PROYECTOS REALIZADOS</h2>
           <div className='containerProyecto'>
-            <CardProyectos title={"LANDING PAGE SERIUM360"} id={"proyecto1"} imgTrabajo={imgHSE} fecha={"2022-2022"} desc={"Al finalizar el curso avanzado, me dieron el último certificado luego de mostrar un proyecto de página web responsive con HTML, CSS y diseñada en Figma."} tecnologias={["HTML", "CSS","JavaScript", "FIGMA"]} verFigma={true} verPag={true} btnLink={"https://drive.google.com/file/d/13jnz4Ozou7EzePIMrLGnvzZ2VvKSN42K/view"} invertido={false}/>
-            <CardProyectos title={"LANDING PAGE SERIUM360"} id={"proyecto2"} imgTrabajo={imgHSE} fecha={"2022-2022"} desc={"Al finalizar el curso avanzado, me dieron el último certificado luego de mostrar un proyecto de página web responsive con HTML, CSS y diseñada en Figma."} tecnologias={["HTML", "CSS","JavaScript", "FIGMA"]} verFigma={true} verPag={true} btnLink={"https://drive.google.com/file/d/13jnz4Ozou7EzePIMrLGnvzZ2VvKSN42K/view"} invertido={true}/>
+            <CardProyectos title={"LANDING PAGE SERIUM360"} id={"proyecto1"} imgTrabajo={imgHSE} fecha={"2025-2025"} btnFigma={"https://www.figma.com/design/Q0pdAolfnL3ZYdZNeco7ul/HSE?node-id=0-1&p=f&t=QX5veKD52WbcIUuR-0"} desc={"Desarrollamos una landing page para un emprendimiento de seguridad e higiene, donde se presentan sus servicios de manera clara y accesible. La página incluye un formulario de contacto y múltiples opciones de comunicación para facilitar el acceso de los clientes a la empresa."} tecnologias={["HTML", "CSS","JavaScript", "FIGMA"]} verFigma={true} verPag={true} btnLink={"https://serium360.com/"} invertido={false}/>
+            <CardProyectos title={"VOXAIVE"} id={"proyecto2"} imgTrabajo={imgVoxaive} fecha={"2025-2025"} desc={"Diseñé y desarrollé una página web para el grupo de trabajo freelancer que formé junto a excompañeros de la secundaria técnica. En ella presentamos nuestros proyectos de diseño gráfico, diseño web y desarrollo de páginas. El sitio funciona como portafolio colectivo y vitrina para nuestros servicios."} tecnologias={["HTML", "CSS","JavaScript", "FIGMA"]} verFigma={true} verPag={true} btnFigma={"https://www.figma.com/design/SsYwAyLF6kGArpS1hvQCWt/Untitled?t=z0rxY8Xo1xJ7Jxul-0"} btnLink={"https://voxaive.cloud"} invertido={true}/>
           </div>
         </div>
       </section>
@@ -219,7 +241,6 @@ function App() {
           <p>Material gráfico como iconos proporcionado de www.freepik.es</p>
         </div>
       </footer>
-      
     </>
   )
 }

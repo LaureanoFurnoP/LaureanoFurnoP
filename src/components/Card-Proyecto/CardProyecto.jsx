@@ -37,8 +37,8 @@ const CardProyectos = ({title, imgTrabajo, id, desc, tecnologias, verPag, verFig
                             ))}
                         </div>
                         <div className='btns-Proyecto'>
-                            {verPag && <button onClick={() => location.href = `${btnLink}`} className='btnPag_Est'>VER PAGINA</button>}
-                            {verFigma && <button onClick={() => location.href = `${btnFigma}`} className='btnCer_Est'>VER FIGMA</button>}
+                            {verPag && <button onClick={() => window.open(btnLink, '_blank')} className='btnPag_Est'>VER PAGINA</button>}
+                            {verFigma && <button onClick={() => window.open(btnFigma, '_blank')} className='btnCer_Est'>VER FIGMA</button>}
                         </div>
                     </div>
                 </div>
