@@ -262,6 +262,8 @@ span {
   font-family: "Oswald";
   font-size: 16px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 #Tecnologias {
   width: 85%;
