@@ -264,6 +264,7 @@ span {
   text-decoration: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #Tecnologias {
   width: 85%;
