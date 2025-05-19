@@ -6,7 +6,7 @@ const Card = ({ nameTitulo, desc, tecnologias, verCert, fecha, btnLink }) => {
 
     return (
         <>
-            <div className='background-CardEstudio'>
+            <div data-aos="fade-left" className='background-CardEstudio'>
                 <h3 className='nameTitulo'>{nameTitulo}</h3>
                 <p className='fechaInicio-terminado'>{fecha}</p>
                 <p className='descripcionEstudio'>{desc}</p>

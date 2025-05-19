@@ -37,6 +37,7 @@
 
 .containerText p {
   font-weight: 350;
+  width: 90%;
   font-size: 19px;
 }
 
@@ -249,7 +250,6 @@ span {
 .imgSobremi {
   width: 500px;
   height: 420px;
-  background-color: #57bd9e;
 }
 
 .imgSobremi img {

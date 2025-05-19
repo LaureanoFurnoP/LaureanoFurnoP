@@ -96,10 +96,10 @@ function App() {
       <section id='Banner'>
         <div className='containerBanner'>
           <div className='containerText'>
-            <h2>Hola, Soy <span>Laureano Furno</span></h2>
-            <h1>Desarrollador <span>Full-Stack</span><span className='escribir'>&#160;</span></h1>
-            <p>Desarrollador full-stack, enfocado en aprender y construir aplicaciones web modernas y funcionales, apasionado de la creación de soluciones a problematicas y con muchas ganas de crecer, aprender y participar en proyectos.</p>
-            <div className='containerButtons'>
+            <h2 data-aos="fade-right"  data-aos-duration="500">Hola, Soy <span>Laureano Furno</span></h2>
+            <h1 data-aos="fade-right"  data-aos-duration="1000">Desarrollador <span>Full-Stack</span><span className='escribir'>&#160;</span></h1>
+            <p data-aos="fade-right"  data-aos-duration="1500">Desarrollador full-stack, enfocado en aprender y construir aplicaciones web modernas y funcionales, apasionado de la creación de soluciones a problematicas y con muchas ganas de crecer, aprender y participar en proyectos.</p>
+            <div data-aos="fade-right"  data-aos-duration="2000" className='containerButtons'>
               <button onClick={() => contactarIr()} className='btnContactarBanner'>CONTACTAR</button>
               <a href={doc} download className='btnSeparador btnCV'>DESCARGAR CV</a>
               <div className='contenedorBotones'>
@@ -125,16 +125,16 @@ function App() {
           </div>
           <div className='textoSobreMi'>
             <Titles title={"SOBRE MI"} />
-            <p>
+            <p data-aos="fade-up">
               Soy Laureano Furno, desarrollador full-stack. Recién me gradué de una escuela técnica en computación, donde aprendí sobre desarrollo web, Java, Python, bases de datos como MySQL, metodologías ágiles y cómo documentar y diagramar proyectos.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Me gusta estar siempre en movimiento en el mundo IT: miro contenido, sigo eventos, y hago cursos o capacitaciones sobre todo lo que me llama la atención. Disfruto aprender, crear y meterme de lleno en los proyectos que me desafían.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Tuve la oportunidad de participar en una internship donde pude aplicar mis habilidades en desarrollo web creando una app para la gestión de newsletters. Usé tecnologías como JavaScript, Node.js, APIs REST, PostgreSQL, además de prácticas de diagramación y trabajo en equipo. Fue una experiencia muy enriquecedora, que me permitió desenvolverme en un entorno laboral real.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Después de completar las prácticas, seguí trabajando en la empresa durante seis meses más para terminar la herramienta.
             </p>
           </div>
@@ -196,7 +196,7 @@ function App() {
                 <div className='cartExp'>
                   <div className='Circulo'></div>
                   <svg className='flechaCartaExp' xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 -960 960 960" width="34px" fill="white"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" /></svg>
-                  <Card nameTitulo={"SCHUB: FREELANCER"} fecha={"2025-Actualidad"} desc={"Actualmente estoy trabajando como freelancer en Schub, terminando la herramienta que comenzamos en la internship. Estoy desarrollando mejores habilidades para trabajar y también aprendiendo tecnologías como AWS, Kubernetes y Docker."} tecnologias={["HTML", "CSS", "FIGMA", "Javascript", "Node", "postgresql", "React"]} btnLink={"https://drive.google.com/file/d/13jnz4Ozou7EzePIMrLGnvzZ2VvKSN42K/view"} />
+                  <Card  nameTitulo={"SCHUB: FREELANCER"} fecha={"2025-Actualidad"} desc={"Actualmente estoy trabajando como freelancer en Schub, terminando la herramienta que comenzamos en la internship. Estoy desarrollando mejores habilidades para trabajar y también aprendiendo tecnologías como AWS, Kubernetes y Docker."} tecnologias={["HTML", "CSS", "FIGMA", "Javascript", "Node", "postgresql", "React"]} btnLink={"https://drive.google.com/file/d/13jnz4Ozou7EzePIMrLGnvzZ2VvKSN42K/view"} />
                 </div>
                 <div className='cartExp'>
                   <div className='Circulo'></div>
